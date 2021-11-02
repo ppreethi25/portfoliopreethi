@@ -88,7 +88,23 @@ body {
     border-color: transparent
   }
 }
+@media screen and (max-width:375px) {
+  .typing-demo {
+    width: 38ch;
+  }
+  .personal_text h4 {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width:320px) {
 
+    .typing-demo {
+    width: 28ch;
+  }
+  .personal_text h4 {
+    font-size: 17px !important;
+  }
+}
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Heebo", sans-serif;
@@ -140,35 +156,7 @@ button:focus {
   text-align: center;
   max-width: 670px;
   margin: 0px auto 75px; }
-  .wrapper1 {
-    /* height: 100vh; */
-    /*This part is important for centering*/
-    display: flex;
-    align-items: left;
-    justify-content: left;
-  }
   
-  .typing-demo1 {
-    width: 60ch;
-    animation: typing 5s steps(22), blink .5s step-end infinite alternate;
-    white-space: nowrap;
-    overflow: hidden;
-    border-right: 3px solid;
-    /* font-family: monospace; */
-    /* font-size: 14px; */
-  }
-  
-  @keyframes typing {
-    from {
-      width: 0
-    }
-  }
-      
-  @keyframes blink {
-    50% {
-      border-color: transparent
-    }
-  }
 
 
   .main_title h2 {
