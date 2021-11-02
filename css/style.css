@@ -22,7 +22,13 @@ a {
     width: 75%;
     margin: 0 auto;
 }
-
+.logo {
+  color: #000000d6;
+  text-shadow: 3px -1px 7px #fff;
+  font-size: 30px;
+  font-family: 'Fruktur', cursive;
+  font-weight: 500;
+}
 canvas {
     position:absolute;
     top:0;
@@ -49,9 +55,40 @@ body {
   font-size: 16px;
   font-family: "Roboto", sans-serif;
   font-weight: normal;
-  background-color: rgb(207, 204, 204);
+  background-image: -webkit-linear-gradient( 
+    0deg, #88f3ff 0%, #201b1d 100%);
   /* color: #777777; */
  }
+ .wrapper {
+  /* height: 100vh; */
+  /*This part is important for centering*/
+  display: flex;
+  align-items: left;
+  justify-content: left;
+}
+
+.typing-demo {
+  width: 40ch;
+  animation: typing 5s steps(22), blink .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  /* font-family: monospace; */
+  /* font-size: 14px; */
+}
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+    
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
+}
+
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Heebo", sans-serif;
@@ -67,7 +104,7 @@ button:focus {
 
   .p_120 {
     background-image: -webkit-linear-gradient( 
-      0deg, #4a1544 0%, #ffc10782 100%);
+      0deg, #88f3ff 0%, #201b1d 100%);
     padding-bottom: 20px;
     opacity: 90%;
 }
@@ -103,10 +140,41 @@ button:focus {
   text-align: center;
   max-width: 670px;
   margin: 0px auto 75px; }
+  .wrapper1 {
+    /* height: 100vh; */
+    /*This part is important for centering*/
+    display: flex;
+    align-items: left;
+    justify-content: left;
+  }
+  
+  .typing-demo1 {
+    width: 60ch;
+    animation: typing 5s steps(22), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    /* font-family: monospace; */
+    /* font-size: 14px; */
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0
+    }
+  }
+      
+  @keyframes blink {
+    50% {
+      border-color: transparent
+    }
+  }
+
+
   .main_title h2 {
     font-family: "Heebo", sans-serif;
     font-size: 36px;
-    color: #222222;
+    color: #050303;
     margin-bottom: 15px;
     text-transform: uppercase; }
   .main_title p {
@@ -299,20 +367,21 @@ button:focus {
   margin-bottom: 200px; }
   .home_banner_area .box_1620 {
     min-height: 700px;
-    
-    border-radius: 12px;
+    border-radius: 100px;
     position: relative;
     bottom: -200px;
-    background-image: -webkit-linear-gradient(
-      0deg, #c7eefa 0%, #f175b2 100%);
     padding: 30px;
-    box-shadow: 0px 20px 80px 0px rgba(153, 153, 153, 0.3); }
-  .home_banner_area .banner_inner {
-    
-    position: relative;
-    width: 100%;
-    min-height: 700px;
-    display: flex; }
+    background-image: -webkit-linear-gradient( 
+0deg, #88f3ff 0%, #201b1d 100%);
+    box-shadow: 0px 20px 80px 0px rgb(153 153 153 / 30%);
+}
+.home_banner_area .banner_inner {
+  position: relative;
+  width: 100%;
+  min-height: 700px;
+  display: flex;
+  justify-content: center;
+}
     .home_banner_area .banner_inner .banner_content {
       
       color: #222222;
@@ -1427,7 +1496,7 @@ h1 {
   font-size: 36px; }
 
 h2 {
-  font-size: 30px; }
+  font-size: 36px; }
 
 h3 {
   font-size: 24px; }
@@ -2428,7 +2497,7 @@ h6 {
   width: auto;
   display: inline-block;
   background: #766dff;
-  padding: 0px 50px;
+  padding: 0px 20px;
   color: #fff;
   font-family: "Roboto", sans-serif;
   font-size: 13px;
@@ -2441,6 +2510,11 @@ h6 {
   border: 1px solid #766dff;
   cursor: pointer;
   transition: all 300ms linear 0s; }
+
+  a.btn.submit_btn {
+    margin-bottom: 10px;
+}
+
   .submit_btn:hover {
     background: transparent;
     color: #766dff; }
@@ -2559,16 +2633,16 @@ h6 {
         border-radius: 10px;
         background: #e8e8e8;
     }
-      .tools_expert .skill_main .skill_item .progress .progress-bar {
-        width: 0%;
-        transition: width .7s ease;
-        height: 13px;
-        border-radius: 5px;
-        vertical-align: middle;
-        align-self: center;
-        background-image: -webkit-linear-gradient( 
-          0deg, #e906c6 0%, #00daf37a 100%);
-    }
+    .tools_expert .skill_main .skill_item .progress .progress-bar {
+      width: 0%;
+      transition: width 7.7s ease;
+      height: 13px;
+      border-radius: 5px;
+      vertical-align: middle;
+      align-self: center;
+      background-image: -webkit-linear-gradient( 
+  0deg, #222222 0%, #38a4ff 100%);
+  }
 
 /* End Welcome Area css
 ============================================================================================ */
@@ -2676,7 +2750,7 @@ h6 {
         .feature_area.white_feature {
           /* background: rgb(204, 193, 193); */
           background-image: -webkit-linear-gradient( 
-      0deg, #4a1544 0%, #ffc10782 100%);
+            0deg, #88f3ff 0%, #201b1d 100%);
       }
     .feature_area.white_feature .feature_item {
       background: #f9f9ff; }
@@ -2744,38 +2818,42 @@ h6 {
   letter-spacing: 2.1px;
   font-weight: normal;
   margin-bottom: 12px;
-  color: #222222; }
+  color: #fff; }
 .personal_text h4 {
-  font-size: 16px;
+  font-size: 24px;
   font-weight: 500;
   font-family: "Roboto", sans-serif;
   text-transform: uppercase;
   margin-bottom: 20px;
-  color: #222222; }
+  color: #fff; }
 .personal_text h3 {
   font-size: 48px;
   text-transform: uppercase;
   margin-bottom: 15px;
-  color: #222222; }
+  color: #fff; }
 .personal_text p {
   font-family: "Roboto", sans-serif;
   max-width: 540px;
-  color: #000;
-  margin-bottom: 40px; }
+  color: #fff;
+  /* margin-bottom: 40px; */
+ }
 .personal_text .basic_info li {
   margin-bottom: 15px; }
   .personal_text .basic_info li a {
     position: relative;
     padding-left: 40px;
     font-size: 16px;
-    color: #000; }
+    color: #fff;}
     .personal_text .basic_info li a i {
       position: absolute;
       left: 0px;
       top: 50%;
       transform: translateY(-50%);
       font-size: 20px;
-      color: #766dff; }
+      color: #fff;
+      background-image: -webkit-linear-gradient( 
+  0deg, #17a2b8 0%, #201b1d 100%);
+  }
 
       .personal_text .basic_info li a i:hover {
         color:#543a50; ;
@@ -2896,7 +2974,7 @@ h6 {
 .testimonials_area {
   background: #f9f9ff;
   background-image: -webkit-linear-gradient( 
-    0deg, #4a1544 0%, #ffc10782 100%);
+    0deg, #88f3ff 0%, #201b1d 100%);
 padding-bottom: 30px;
 padding-top: 30px;
 
@@ -2931,11 +3009,20 @@ padding-top: 30px;
 .test_title p {
   margin-bottom: 0px; }
 
-.testi_item {
-  border: 1px solid #eeeeee;
-  border-radius: 10px;
-  background: #fff;
-  padding: 40px 28px; }
+  .testi_item {
+    /* border: 1px solid #eeeeee; */
+    border-radius: 10px;
+    background-image: -webkit-linear-gradient( 
+0deg, #88f3ff 0%, #201b1d 100%);
+    padding: 30px 20px;
+    box-shadow: 6px 4px #777777;
+}
+
+img.image {
+  border-radius: 20px;
+}
+
+
   .testi_item p {
     font-style: italic; }
   .testi_item h4 {
@@ -2953,7 +3040,9 @@ padding-top: 30px;
 ============================================================================================ */
 .footer_area {
   background: #000; }
-
+  .row.footer_inner {
+    padding-top: 20px;
+}
 .f_title {
   margin-bottom: 35px; }
   .f_title h3 {
