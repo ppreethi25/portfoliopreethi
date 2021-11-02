@@ -2617,14 +2617,14 @@ h6 {
       padding: 5px;
       border-radius: 10px; }
       .tools_expert .skill_main .skill_item .progress {
-        height: 13px;
+        height: 8px;
         border-radius: 10px;
         background: #e8e8e8;
     }
     .tools_expert .skill_main .skill_item .progress .progress-bar {
       width: 0%;
       transition: width 7.7s ease;
-      height: 13px;
+      height: 8px;
       border-radius: 5px;
       vertical-align: middle;
       align-self: center;
@@ -2956,7 +2956,11 @@ h6 {
 /* Testimonials Area css
 ============================================================================================ */
 
-
+video {
+  margin: 0 auto;
+  display: flex;
+  margin-top: 35px;
+}
 
 
 .testimonials_area {
