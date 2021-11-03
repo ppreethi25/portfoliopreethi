@@ -23,11 +23,11 @@ a {
     margin: 0 auto;
 }
 .logo {
-  color: #000000d6;
-  text-shadow: 3px -1px 7px #fff;
-  font-size: 30px;
-  font-family: 'Fruktur', cursive;
-  font-weight: 500;
+    color: #88f3ff;
+    text-shadow: 3px -1px 7px #777777;
+    font-size: 30px;
+    font-family: 'Fruktur', cursive;
+    font-weight: 500;
 }
 canvas {
     position:absolute;
