@@ -2972,7 +2972,7 @@ video {
 }
 @media screen and (max-width:375px) {
   video {
-    width:310px;
+    width:290px;
      height:240px;
   }
   
