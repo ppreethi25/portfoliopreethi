@@ -2965,14 +2965,14 @@ video {
 }
 @media screen and (max-width:768px) {
   video {
-    width:420px;
+    width:400px;
      height:240px;
   }
   
 }
 @media screen and (max-width:412px) {
   video {
-    width:400px;
+    width:375px;
      height:240px;
   }
 @media screen and (max-width:375px) {
