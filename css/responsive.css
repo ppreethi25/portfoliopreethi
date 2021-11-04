@@ -1,10 +1,3 @@
-
-@media screen and (max-width: 768px)
-canvas {
-    height: 864px;
-}
-
-
 @media (max-width:1619px){
 	/* Main Menu Area css
 	============================================================================================ */
@@ -408,10 +401,10 @@ canvas {
 	
 	/* Home Banner Area css
 	============================================================================================ */
-   .home_banner_area .banner_inner .banner_content {
-    padding: 18px 9px;
-    margin-top: 0px;
-}
+    .home_banner_area .banner_inner .banner_content {
+		padding: 30px 15px;
+		margin-top: 0px;
+	}
 	.banner_content .white_btn {
 		display: block;
 	}
@@ -446,11 +439,4 @@ canvas {
 	.isotope_fillter .gallery_filter li {
 		margin-right: 17px;
 	}
-}
-@media screen and (max-width:280px)
-	{
-		video {
-    width: 270px;
-    height: 240px;
-}
 }
