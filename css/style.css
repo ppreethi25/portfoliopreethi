@@ -48,10 +48,7 @@ canvas {
   }
   
 }
-/* @media screen and (max-width: 600px)
-canvas {
-    height: 700px;
-} */
+
 
 body {
   
@@ -176,6 +173,19 @@ button:focus {
     line-height: 26px;
     color: #777777;
     margin-bottom: 0px; }
+
+
+    .main_title1 {
+      padding-top: 50px;
+      text-align: center;
+      max-width: 670px;
+      margin: 0px auto 75px; }
+  .main_title1 h2 {
+    font-family: "Heebo", sans-serif;
+    font-size: 36px;
+    color: #050303;
+    margin-bottom: 15px;
+    text-transform: uppercase; }
 
 /* End Main Title Area css
 ============================================================================================ */
@@ -2581,6 +2591,17 @@ h6 {
     margin-bottom: 40px;
     color: #fff;
 }
+/* welcomw text responsive about section */
+/* ----------------media qurey-------------------- */
+
+@media screen and (max-width: 768px) {
+  .welcome_text p {
+    max-width: 100%;
+  
+  }
+}
+/* ---------------------------------------------------------------- */
+
 .wel_item {
   border: 1px solid #eeeeee;
   padding: 20px 20px;
@@ -2979,6 +3000,7 @@ video {
     width:375px;
      height:240px;
   }
+}
 @media screen and (max-width:375px) {
   video {
     width:290px !important;
@@ -3054,6 +3076,25 @@ img.image {
   .testi_item a {
     color: #ffc000; }
 
+
+    img.work {
+      width: 100%;
+      padding: 5px;
+      background-repeat: no-repeat;
+      object-fit: cover;
+      -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+  }
+ img.work:hover{
+  -moz-box-shadow: 0 0 10px #ccc;
+  -webkit-box-shadow: 0 0 10px #ccc;
+  box-shadow: 0 0 10px #ccc;
+  -webkit-transform: scale(1.3);
+	transform: scale(1.3);
+ }
+ 
 /* End Testimonials Area css
 ============================================================================================ */
 /*---------------------------------------------------- */
