@@ -38,7 +38,7 @@ canvas {
 }
 @media screen and (max-width:1024px) {
   canvas{
-    height: 1300px;
+    height: 1250px;
   }
   
 }
@@ -50,9 +50,7 @@ canvas {
 } */
 @media screen and (max-width: 600px)
 canvas {
-    height: 700
-px
-;
+    height: 700px;
 }
 
 body {
