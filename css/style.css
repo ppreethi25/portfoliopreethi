@@ -34,24 +34,24 @@ canvas {
     top:0;
     left:0;
   width:100%;
-  height: 1000px;
+  height: 950px;
 }
 @media screen and (max-width:1024px) {
-  canvas{
-    height: 1250px;
-  }
-  
-}
-/* @media screen and (max-width:475px) {
   canvas{
     height: 100%;
   }
   
-} */
-@media screen and (max-width: 600px)
+}
+@media screen and (max-width:475px) {
+  canvas{
+     height: 700px;
+  }
+  
+}
+/* @media screen and (max-width: 600px)
 canvas {
     height: 700px;
-}
+} */
 
 body {
   
