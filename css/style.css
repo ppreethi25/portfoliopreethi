@@ -42,11 +42,17 @@ canvas {
   }
   
 }
-@media screen and (max-width:475px) {
+/* @media screen and (max-width:475px) {
   canvas{
     height: 100%;
   }
   
+} */
+@media screen and (max-width: 600px)
+canvas {
+    height: 700
+px
+;
 }
 
 body {
