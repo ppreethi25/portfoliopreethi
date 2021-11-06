@@ -3015,6 +3015,32 @@ video {
   }
   
 }
+
+img.work1 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  opacity: 0.5;
+  object-position: center;
+border: 3px solid #fff;
+
+    transform: scale(1);
+    transition: all .3s ease-out;
+}
+img.work1:hover {
+    opacity: 100%;
+}
+
+.col-lg-2 {
+  margin: 0 auto;
+  display: flex;
+  padding: 20px;
+}
+
+
+
 .testimonials_area {
   background: #f9f9ff;
   background-image: -webkit-linear-gradient( 
