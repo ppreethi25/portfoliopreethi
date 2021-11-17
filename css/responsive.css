@@ -38,7 +38,7 @@
 	============================================================================================ */
 	.home_banner_area {
 		min-height: 728px;
-		margin-bottom: 120px;
+		margin-bottom: 0px;
 	}
 	.home_banner_area .banner_inner {
 		min-height: 650px;
@@ -69,7 +69,7 @@
 		margin-top: 30px;
 	}
 	.home_banner_area .box_1620 {
-		bottom: -130px;
+		bottom: 0px;
 	}
 	.profile_inner .personal_text {
 		padding-left: 0px;
@@ -297,7 +297,11 @@
 		margin-bottom: 30px;
 	}
 }
-@media (max-width:600px){
+@media (max-width:720px){
+
+	.home_banner_area .banner_inner .banner_content .media .media-body {
+		margin-top: 100px;
+	}
 	
 }
 @media (max-width:575px){
@@ -306,6 +310,11 @@
 	}
 	.header_area + section, .header_area + row, .header_area + div {
 		margin-top: 0px;
+	}
+	@media (max-width: 720px){
+.home_banner_area .banner_inner .banner_content .media .media-body {
+    margin-top: 0px;
+}
 	}
     /* Home Banner Area css
 	============================================================================================ */
