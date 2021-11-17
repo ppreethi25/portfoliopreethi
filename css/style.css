@@ -29,26 +29,61 @@ a {
     font-family: 'Fruktur', cursive;
     font-weight: 500;
 }
+.logo:hover {
+  color: #543a50;
+  text-shadow: -4px 1px 3px #88f3ff;
+}
 canvas {
     position:absolute;
     top:0;
     left:0;
   width:100%;
-  height: 950px;
+  height: 100%;
 }
-@media screen and (max-width:1024px) {
-  canvas{
-    height: 100%;
+@media screen and (max-width: 1024px){
+canvas {
+    height: 75%;
+}
+}
+@media screen and (max-width: 768px){
+canvas {
+    height: 75%;
+}
+@media screen and (max-width: 720px) {
+  canvas {
+    height: 45%;
   }
   
 }
-@media screen and (max-width:475px) {
+}
+@media screen and (max-width:550px) {
   canvas{
-     height: 700px;
+     height: 100%;
+  }
+}
+@media screen and (max-width: 425px) {
+canvas {
+    height: 75%;
+}
+}
+@media screen and (max-width:375px) {
+  canvas{
+     height: 75%;
   }
   
 }
-
+@media screen and (max-width:360px) {
+  canvas{
+     height: 90%;
+  }
+  
+}
+@media screen and (max-width:320px) {
+  canvas{
+     height: 80%;
+  }
+  
+}
 
 body {
   
@@ -57,7 +92,7 @@ body {
   font-family: "Roboto", sans-serif;
   font-weight: normal;
   background-image: -webkit-linear-gradient( 
-    0deg, #88f3ff 0%, #201b1d 100%);
+    0deg, #4cd3e3 0%, #000000 100%);
   /* color: #777777; */
  }
  .wrapper {
@@ -111,6 +146,11 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Heebo", sans-serif;
  }
 
+ h2 {
+  font-size: 36px;
+  text-align: center;
+}
+
 button:focus {
   outline: none;
   box-shadow: none; }
@@ -121,7 +161,8 @@ button:focus {
 
   .p_120 {
     background-image: -webkit-linear-gradient( 
-      0deg, #88f3ff 0%, #201b1d 100%);
+      0deg, #4cd3e3 0%, #000000 100%);
+     /* background-image: url(../img/nn.jpg); */
     padding-bottom: 20px;
     opacity: 90%;
 }
@@ -366,21 +407,21 @@ button:focus {
   /* background-image: -moz-linear-gradient(0deg, #766dff 0%, #88f3ff 100%);
   background-image: -webkit-linear-gradient(0deg, #766dff 0%, #88f3ff 100%);
   background-image: -ms-linear-gradient(0deg, #766dff 0%, #88f3ff 100%); */
-  margin-bottom: 200px; }
+  /* margin-bottom: 200px; */
+ }
   .home_banner_area .box_1620 {
     min-height: 700px;
     border-radius: 100px;
     position: relative;
-    bottom: -200px;
+    /* bottom: -200px; */
     padding: 30px;
-    background-image: -webkit-linear-gradient( 
-0deg, #88f3ff 0%, #201b1d 100%);
-    box-shadow: 0px 20px 80px 0px rgb(153 153 153 / 30%);
+    /* background-image: -webkit-linear-gradient(0deg, #88f3ff 0%, #201b1d 100%); */
+    /* box-shadow: 0px 20px 80px 0px rgb(153 153 153 / 30%); */
 }
 .home_banner_area .banner_inner {
   position: relative;
   width: 100%;
-  min-height: 700px;
+  min-height: 660px;
   display: flex;
   justify-content: center;
 }
@@ -2586,10 +2627,11 @@ h6 {
   margin-bottom: 18px;
   text-transform: uppercase; }
   .welcome_text p {
-    max-width: 495px;
+    max-width: 85%;
     font-family: "Roboto", sans-serif;
-    margin-bottom: 40px;
+    margin: 0 auto;
     color: #fff;
+    text-align: center;
 }
 /* welcomw text responsive about section */
 /* ----------------media qurey-------------------- */
@@ -2625,7 +2667,10 @@ h6 {
     margin-bottom: 0px; }
 
 .tools_expert {
-  padding: 20px 0px 0px 0px; }
+  padding: 20px 0px 0px 0px;
+
+}
+
   .tools_expert .skill_main .skill_item {
     margin-bottom: 18px; }
     .tools_expert .skill_main .skill_item:last-child {
@@ -2637,15 +2682,18 @@ h6 {
       font-weight: 500;
       color: #fff;
       margin-bottom: 15px; }
-    .tools_expert .skill_main .skill_item .progress_br {
-      border: 1px solid #eeeeee;
-      padding: 5px;
-      border-radius: 10px; }
-      .tools_expert .skill_main .skill_item .progress {
-        height: 8px;
+      .tools_expert .skill_main .skill_item .progress_br {
+        border: 1px solid #fff;
+        padding: 3px;
         border-radius: 10px;
-        background: #e8e8e8;
+        width: 100%;
     }
+    
+    .tools_expert .skill_main .skill_item .progress {
+      height: 5px;
+      border-radius: 10px;
+      background: #fff;
+  }
     .tools_expert .skill_main .skill_item .progress .progress-bar {
       width: 0%;
       transition: width 7.7s ease;
@@ -2654,9 +2702,31 @@ h6 {
       vertical-align: middle;
       align-self: center;
       background-image: -webkit-linear-gradient( 
-  0deg, #222222 0%, #38a4ff 100%);
+        0deg, #222222 0%, #0528b5 100%);
   }
+  @media screen and (max-width:768px) {
 
+    .tools_expert .skill_main .skill_item .progress_br {
+    
+      width: 100% !important;
+    }
+      
+    }
+    @media screen and (max-width:475px) {
+      .tools_expert {
+        padding: 20px 0px 0px 0px;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        /* align-items: flex-end; */
+    }
+    .tools_expert .skill_main .skill_item .progress_br {
+    
+      width: 100% !important;
+    }
+      
+    }
 /* End Welcome Area css
 ============================================================================================ */
 /* My Tabs Area css
@@ -2763,7 +2833,7 @@ h6 {
         .feature_area.white_feature {
           /* background: rgb(204, 193, 193); */
           background-image: -webkit-linear-gradient( 
-            0deg, #88f3ff 0%, #201b1d 100%);
+            0deg, #4cd3e3 0%, #000000 100%);
       }
     .feature_area.white_feature .feature_item {
       background: #f9f9ff; }
@@ -2848,7 +2918,7 @@ h6 {
   font-family: "Roboto", sans-serif;
   max-width: 540px;
   color: #fff;
-  /* margin-bottom: 40px; */
+  margin-bottom: 40px;
  }
 .personal_text .basic_info li {
   margin-bottom: 15px; }
@@ -2874,7 +2944,8 @@ h6 {
   .personal_text .basic_info li:last-child {
     margin-bottom: 0px; }
 .personal_text .personal_social {
-  margin-top: 45px; }
+  margin-top: 40px; 
+}
   .personal_text .personal_social li {
     display: inline-block;
     margin-right: 7px; }
@@ -3044,7 +3115,7 @@ img.work1:hover {
 .testimonials_area {
   background: #f9f9ff;
   background-image: -webkit-linear-gradient( 
-    0deg, #88f3ff 0%, #201b1d 100%);
+    0deg, #4cd3e3 0%, #000000 100%);
 padding-bottom: 30px;
 padding-top: 30px;
 
@@ -3112,6 +3183,7 @@ img.image {
 	transform: scale(1);
 	-webkit-transition: .3s ease-in-out;
 	transition: .3s ease-in-out;
+  opacity: 50%;
   }
  img.work:hover{
   -moz-box-shadow: 0 0 10px #ccc;
@@ -3119,6 +3191,7 @@ img.image {
   box-shadow: 0 0 10px #ccc;
   -webkit-transform: scale(1.3);
 	transform: scale(1.3);
+  opacity: 100%;
  }
  
 /* End Testimonials Area css
