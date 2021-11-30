@@ -4196,6 +4196,7 @@ input[type=submit].btn-block {
 }
 
 .navbar-brand {
+    width: 50%;
     display: inline-block;
     padding-top: .3125rem;
     padding-bottom: .3125rem;
