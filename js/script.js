@@ -1,6 +1,6 @@
 (function () {
     var requestAnimationFrame = window.requestAnimationFrame || window.mozRequestAnimationFrame || window.webkitRequestAnimationFrame || window.msRequestAnimationFrame || function (callback) {
-            window.setTimeout(callback, 1000 / 60);
+            window.setTimeout(callback, 1000 / 30);
         };
     window.requestAnimationFrame = requestAnimationFrame;
 })();
@@ -20,7 +20,7 @@ function Terrain(options) {
     options = options || {};
     this.terrain = document.createElement("canvas");
     this.terCtx = this.terrain.getContext("2d");
-    this.scrollDelay = options.scrollDelay || 90;
+    this.scrollDelay = options.scrollDelay || 60;
     this.lastScroll = new Date().getTime();
 
     this.terrain.width = width;
