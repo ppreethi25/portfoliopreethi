@@ -63,24 +63,24 @@ canvas {
 }
 @media screen and (max-width: 425px) {
 canvas {
-    height: 70%;
+    height: 90%;
 }
 }
 @media screen and (max-width:375px) {
   canvas{
-     height: 70%;
+     height: 90%;
   }
   
 }
 @media screen and (max-width:360px) {
   canvas{
-     height: 70%;
+     height: 90%;
   }
   
 }
 @media screen and (max-width:320px) {
   canvas{
-     height: 75%;
+     height: 95%;
   }
   
 }
@@ -123,9 +123,9 @@ body {
   animation: typing 5s steps(22), blink .5s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;
-  /* border-right: 3px solid; */
-  /* font-family: monospace; */
-  /* font-size: 14px; */
+  border-right: 3px solid;
+  font-family: monospace;
+  font-size: 14px;
 }
 
 @keyframes typing {
