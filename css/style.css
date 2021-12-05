@@ -63,24 +63,24 @@ canvas {
 }
 @media screen and (max-width: 425px) {
 canvas {
-    height: 90%;
+    height: 70%;
 }
 }
 @media screen and (max-width:375px) {
   canvas{
-     height: 90%;
+     height: 70%;
   }
   
 }
 @media screen and (max-width:360px) {
   canvas{
-     height: 90%;
+     height: 70%;
   }
   
 }
 @media screen and (max-width:320px) {
   canvas{
-     height: 95%;
+     height: 75%;
   }
   
 }
