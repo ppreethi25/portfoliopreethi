@@ -38,7 +38,7 @@ canvas {
     top:0;
     left:0;
   width:100%;
-  height: 90%;
+  height:100%;
 }
 @media screen and (max-width: 1024px){
 canvas {
@@ -84,17 +84,32 @@ canvas {
   }
   
 }
-
+/* ----------------------------------------------------------- */
 body {
   
   line-height: 26px;
   font-size: 16px;
   font-family: "Roboto", sans-serif;
   font-weight: normal;
-  background-image: -webkit-linear-gradient( 
-    0deg, #4cd3e3 0%, #000000 100%);
+  /* background-image: -webkit-linear-gradient( 
+    0deg, #4cd3e3 0%, #000000 100%); */
   /* color: #777777; */
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+
  }
+ @keyframes gradient {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
+}
  .wrapper {
   /* height: 100vh; */
   /*This part is important for centering*/
@@ -104,11 +119,11 @@ body {
 }
 
 .typing-demo {
-  width: 40ch;
+  width: 38ch;
   animation: typing 5s steps(22), blink .5s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;
-  border-right: 3px solid;
+  /* border-right: 3px solid; */
   /* font-family: monospace; */
   /* font-size: 14px; */
 }
@@ -160,8 +175,8 @@ button:focus {
   padding-right: 0px; }
 
   .p_120 {
-    background-image: -webkit-linear-gradient( 
-      0deg, #4cd3e3 0%, #000000 100%);
+    /* background-image: -webkit-linear-gradient( 
+      0deg, #4cd3e3 0%, #000000 100%); */
      /* background-image: url(../img/nn.jpg); */
     padding-bottom: 20px;
     opacity: 90%;
@@ -2819,7 +2834,7 @@ h6 {
 ============================================================================================ */
 .feature_area {
   padding-bottom: 0px;
-  background: #f9f9ff; 
+  /* background: #f9f9ff;  */
 }
   .feature_area.feature_tow {
     
@@ -2830,11 +2845,11 @@ h6 {
       background: #f9f9ff; }
       .feature_area.feature_tow .feature_item:hover {
         background: #fff; }
-        .feature_area.white_feature {
-          /* background: rgb(204, 193, 193); */
-          background-image: -webkit-linear-gradient( 
+        /* .feature_area.white_feature {
+          background: rgb(204, 193, 193); 
+           background-image: -webkit-linear-gradient( 
             0deg, #4cd3e3 0%, #000000 100%);
-      }
+      } */
     .feature_area.white_feature .feature_item {
       background: #f9f9ff; }
       .feature_area.white_feature .feature_item:hover {
@@ -3113,9 +3128,9 @@ img.work1:hover {
 
 
 .testimonials_area {
-  background: #f9f9ff;
+  /* background: #f9f9ff;
   background-image: -webkit-linear-gradient( 
-    0deg, #4cd3e3 0%, #000000 100%);
+    0deg, #4cd3e3 0%, #000000 100%); */
 padding-bottom: 30px;
 padding-top: 30px;
 
